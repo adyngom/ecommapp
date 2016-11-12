@@ -26,11 +26,12 @@ import main from './main/main.component';
 import constants from './app.constants';
 import util from '../components/util/util.module';
 import socket from '../components/socket/socket.service';
+import product from './product/product.component';
 
 import './app.css';
 
 angular.module('ecommApp', [ngCookies, ngResource, ngSanitize, ngAnimate, 'btford.socket-io', uiRouter, _Auth,
-    account, admin, navbar, footer, main, constants, socket, util
+    account, admin, navbar, footer, main, product, constants, socket, util
   ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {
