@@ -1,7 +1,7 @@
 'use strict';
 
 import angular from 'angular';
-// import ngAnimate from 'angular-animate';
+import ngAnimate from 'angular-animate';
 import ngCookies from 'angular-cookies';
 import ngResource from 'angular-resource';
 import ngSanitize from 'angular-sanitize';
@@ -29,7 +29,7 @@ import socket from '../components/socket/socket.service';
 
 import './app.css';
 
-angular.module('ecommApp', [ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter, _Auth,
+angular.module('ecommApp', [ngCookies, ngResource, ngSanitize, ngAnimate, 'btford.socket-io', uiRouter, _Auth,
     account, admin, navbar, footer, main, constants, socket, util
   ])
   .config(routeConfig)
